@@ -1,0 +1,50 @@
+
+.items-container {
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px 0px 10px;
+  border-radius: 20px;
+  margin: 10px 0 10px 0;
+
+
+} 
+
+.login{
+  display: flex;
+  justify-content: right;
+  color: white;
+}
+
+#image{
+  width: 225px;
+  height: 200px;
+  padding: 0;
+  border-radius: 20px;
+  margin-left: 0;
+}
+
+#btn{
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  color: black !important;
+}
+
+.inside{
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+
+div{
+  margin-left: 30px;
+  display: flex;
+  float: left;
+  
+}
+
+#Heading{
+  display: flex;
+  margin-left: 45px;
+}

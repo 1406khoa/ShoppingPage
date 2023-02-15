@@ -1,0 +1,11 @@
+
+
+    <div>Giỏ Hàng</div>
+
+    <div id="item-container" *ngFor="let c of cart" >
+      <app-product-list [itemProduct] = "c.item"  >  </app-product-list>
+      <div> {{c.quantity}} </div>
+    </div>
+
+
+

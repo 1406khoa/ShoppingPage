@@ -1,0 +1,32 @@
+<div >
+  <mat-card class="items-container">
+    <mat-card-header>
+      <mat-card-title id="Heading">{{itemProduct.name}}</mat-card-title>
+      <mat-card-subtitle>Thương hiệu: {{itemProduct.ShopName}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img id="image" class="items-container"  mat-card-image src="{{itemProduct.Image}}" alt="">
+
+    <mat-card-content class="inside" >
+      <p>Giá: {{itemProduct.price}}</p>
+    </mat-card-content>
+
+    <mat-card-content class="inside">
+      <p *ngIf="itemProduct.OutOfStock == false">Tình trạng hàng: Còn hàng </p>
+      <p *ngIf="itemProduct.OutOfStock == true">Tình trạng hàng: Hết hàng </p>
+    </mat-card-content>
+
+    <mat-card-content class="inside">
+      <p>Số lượng đặt hàng: {{itemProduct.NumberOfOrder}} </p>
+    </mat-card-content>
+
+    <mat-card-content class="inside">
+      <p>Mô tả: {{itemProduct.decription}} </p>
+    </mat-card-content>
+
+    <mat-card-actions  >
+      <button mat-button id="btn" (click)="addItems(itemProduct)">Thêm vào giỏ hàng</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

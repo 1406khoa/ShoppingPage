@@ -1,51 +1,6 @@
 
-<p>
-<mat-toolbar >
-  <button mat-icon-button class="menu" ><mat-icon>menu</mat-icon></button>
-  <span>Khoazada</span>
-  <mat-toolbar class="login">
-    <input id="search" type="text">
-    <button mat-button>login</button>
-    <button mat-button >Sign out</button>
-  </mat-toolbar>
-</mat-toolbar>
-</p>
-  
-
-
-<div *ngFor="let Item of this.items" >
-  <mat-card class="items-container">
-    <mat-card-header>
-      <mat-card-title id="Heading">{{Item.name}}</mat-card-title>
-      <mat-card-subtitle>Thương hiệu: {{Item.ShopName}}</mat-card-subtitle>
-    </mat-card-header>
-    
-    <img id="image" class="items-container"  mat-card-image src="{{Item.Image}}" alt="eroqwewqeqwe">
-  
-    <mat-card-content class="inside" >
-      <p>Giá: {{Item.price}}</p>
-    </mat-card-content>
-
-    <mat-card-content class="inside">
-      <p>Tình trạng hàng: {{ItemStatus(Item.OutOfStock)}} </p>
-    </mat-card-content>
-
-    <mat-card-content class="inside">
-      <p>Số lượng đặt hàng: {{Item.NumberOfOrder}} </p>
-    </mat-card-content>
-
-    <mat-card-content class="inside">
-      <p>Mô tả: {{Item.decription}} </p>
-    </mat-card-content>
-  
-    <mat-card-actions id="btn" >
-      <button mat-button >Thêm vào giỏ hàng</button>
-    </mat-card-actions>
-  </mat-card>
-  
-</div>
- 
+<app-navbar></app-navbar>
 
 
 
-
+<router-outlet></router-outlet>
